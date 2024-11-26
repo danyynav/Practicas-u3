@@ -1,0 +1,46 @@
+/*doc css*/
+
+
+* {margin: 0;
+    padding: 0;}
+    
+    
+    section, div { box-sizing: border-box;}
+    
+    .contenedor { display: flex;
+                 width: 100%;
+                background-color: cornsilk;
+                padding: 15px; 
+                flex-flow: column wrap; }
+    
+    
+     .items { width: 100%;
+              background-color: aqua;
+              margin-bottom: 15px; }
+    
+    /*media queries*/
+     @media only screen and (min-width:580px) {
+     
+     h3 {color: whitesmoke;
+    text-align: center;}
+    
+    .item { height: 100px;
+    background-color: blue; }
+    }
+    
+    /*Pantallas de más de 780px*/
+    @media only screen and (min-width:780px) {
+        .contenedor {background-color: brown;}
+    
+        h3 {color: blue;}
+    }
+    
+    /*Pantalla de más de 1380*/
+    @media only screen and (min-width:1380px) {
+    
+    .contenedor { flex-flow: row wrap; 
+                  width: 60%;
+                  margin: auto;}
+    .item {width: 33.33%; 
+           margin-bottom: 0%;}
+    }
